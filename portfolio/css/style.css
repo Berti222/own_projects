@@ -178,7 +178,8 @@ nav a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 122, 204, 0.96);
+    /* background-color: rgba(0, 122, 204, 0.96); */
+    background-image: linear-gradient(to right, rgba(0, 122, 204, 0.96), rgba(115, 199, 255, 0.96));
     box-shadow: 0 1px 2px rgb(173, 173, 173);
     z-index: 100;
 }
@@ -191,7 +192,7 @@ nav a:hover {
 
 .stiky a:link,
 .stiky a:visited {
-    color: #ccc;
+    color: #ddd;
     padding-bottom: 6px;
     border-bottom: 3px solid transparent;
     transition: color 0.2s, border 0.4s;
