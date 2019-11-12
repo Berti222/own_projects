@@ -139,16 +139,16 @@ a:visited {
 
 }
 
-header a:link,
-header a:visited {
+nav a:link,
+nav a:visited {
     color: #bfd0e0;
     padding-bottom: 6px;
     border-bottom: 3px solid transparent;
     transition: color 0.2s, border 0.4s;
 }
 
-header a:active,
-header a:hover {
+nav a:active,
+nav a:hover {
     color: #d7eafc;
     border-bottom: 3px solid rgb(120, 51, 167);     /*eredtileg: rgb(182, 75, 253)*/
 }
@@ -162,9 +162,52 @@ header a:hover {
     font-weight: 400;
 }
 
+.main-nav li:first-child {
+    display: none;
+}
+
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
+}
+
+    /* Stiky nav */
+
+.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 122, 204, 0.96);
+    box-shadow: 0 1px 2px rgb(173, 173, 173);
+    z-index: 100;
+}
+
+.stiky .main-nav {
+    float: left;
+    margin: 12px 0;
+    font-weight: 300;
+}
+
+.stiky a:link,
+.stiky a:visited {
+    color: #ccc;
+    padding-bottom: 6px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border 0.4s;
+}
+
+.stiky .main-nav li:first-child {
+    display: inline-block;
+}
+
+.stiky i{
+    color: rgb(20, 20, 20);
+}
+
+.stiky a:active,
+.stiky a:hover {
+    color: #fff;
 }
 
 /*------------  Pictures --------------*/

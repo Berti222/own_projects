@@ -39,5 +39,12 @@ $(document).ready(function() {
         }
       });
 
-      
+      $('.js--section-aboutMe').waypoint(function(direction){
+        if(direction == 'down')
+          $('nav').addClass('stiky');
+        else
+          $('nav').removeClass('stiky');
+      }, {
+        offset: '80px'
+      });
 });
