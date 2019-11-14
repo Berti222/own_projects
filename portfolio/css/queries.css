@@ -1,0 +1,181 @@
+@media only screen and (max-width: 1200px){
+
+    /* Header ---- */
+    .main-nav li:last-child{
+        margin-right: 20px;
+    }
+    .header-text-box{
+        position: absolute;
+        width: 400px;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -55%);
+    }
+    .h1-div {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .span-1-of-2 {
+        padding: 0 10px;
+    }
+
+    /*  Programing section --- */
+    .programing {    
+        padding-bottom: 10px;
+        height: 100%;
+    }
+
+    .programing-divs {        
+        margin: 20px auto;
+        padding: 20px;
+        width: 100%; 
+        max-width: 450px;  
+        height: 450px;      
+    }
+}
+
+@media only screen and (max-width: 860px){
+
+    /*  Programing section --- */
+
+    .programing-divs { 
+        height: 500px;      
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* General Properties */
+    body {
+        font-size: 16px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    h3 {
+    
+        margin: 10px 0;
+    }
+
+    .span-1-of-2 {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    /*  Programing section --- */
+
+    .programing-divs {        
+        margin: 20px auto;
+        padding: 20px;
+        width: 430px;
+        height: 450px;      
+    }
+
+     /*  Education ---  */
+    .edu-ul{
+        margin-bottom: 15px;
+    }
+    .edu-ul dl {
+        margin-top:16px;
+    }
+    .edu {
+        margin-top: 30px;
+    }
+
+    /*  Working ----  */
+    .experiences-section {
+        margin-top: 30px;
+        background-color: #f1f1f1;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.85),rgba(228, 228, 228, 0.85)), url('../img/working.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+    }
+    .working img{      
+        /* width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-content: center; */
+        display: none;
+    }
+
+    .working ul li dl dt {
+        font-weight: 500;
+        background-color: rgba(167, 167, 167, 0.7);
+    }
+    .working ul li dl dd {
+        font-weight: 400;
+    }
+
+    .blue-line {
+        height: 30px;
+    }
+
+    .kitchen {  
+        height: 30vh;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        font-size: 15px;
+    }
+    .span-1-of-2 {
+        padding: 0 5px;
+    }
+    
+    /* Titles --------------*/
+    h2 {
+        font-size: 160%;
+    }
+    h3 {
+    
+        font-size: 120%;
+    }
+
+    /* Header --------------*/
+    .header-text-box{
+        position: absolute;
+        width: 240px;
+        top: 50%;
+        
+    }
+    .header-text-box span {
+        display: none;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    .h1-div {
+        font-size: 130%;
+    }
+
+    /* Working section --------------*/
+    .experiences-section {
+        margin-top: 0;
+    }
+
+    .working ul {
+        margin-left: 2%;
+    }
+
+    .programing-divs {        
+        padding: 3px;
+        width: 100%; 
+        max-width: auto;  
+        height: auto;
+        min-height: 500px;      
+    }
+
+    .profile-picture{
+        width: 100%;
+    }
+}
