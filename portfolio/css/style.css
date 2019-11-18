@@ -155,6 +155,18 @@ nav a:hover {
 }
 
 /*------------  Navigation --------------*/
+nav{
+    padding-right: 10px;
+}
+
+.portfolio {
+    display: none;
+}
+
+nav a .la {
+    color: #000;
+}
+
 .main-nav {
     float: right;
     list-style: none;
@@ -211,6 +223,21 @@ nav a:hover {
 .stiky a:hover {
     color: #fff;
 }
+
+    /* Navigation icon */
+.mobile-nav-icon {
+    display: none;
+    float: right;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.stiky div i,
+.mobile-nav-icon i{
+    cursor: pointer;
+    font-size: 200%;
+}
+
 
 /*------------  Pictures --------------*/
 

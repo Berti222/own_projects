@@ -16,7 +16,7 @@
     }
 }
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1025px){
     .span-1-of-2 {
         padding: 0 10px;
     }
@@ -34,6 +34,32 @@
         max-width: 450px;  
         height: 450px;      
     }
+
+    /* nav links   -------------- */
+    nav a:link,
+    nav a:visited {
+        color: #d7eafc;
+        padding-bottom: 6px;
+        border-bottom: 0;
+        transition: none;
+    }
+
+    nav a:active,
+    nav a:hover {
+        color: #d7eafc;
+        border-bottom: 0;
+    }
+
+    .stiky a:link,
+    .stiky a:visited {
+        color: #fff;
+        padding-bottom: 6px;
+        border-bottom: 0;
+        transition: none;
+    }
+
+
+    
 }
 
 @media only screen and (max-width: 860px){
@@ -67,6 +93,71 @@
         padding: 0 10px;
     }
 
+    /* Navigation   ---------------*/
+
+    nav {
+        min-height: 40px;
+    }
+
+    .stiky .portfolio {
+        font-family: 'Righteous', 'Arial', sans-serif;
+        display: inline-block;
+        position: absolute;
+        top:5px;
+        left: 8px;
+        color: #fff;
+        font-size: 160%;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+    
+    /* user icon*/
+    .stiky .main-nav li:first-child {
+        display: none;
+    }
+
+    .main-nav li:first-child {
+        display: block;
+    }
+
+    .main-nav li .la {
+        color: #fff;
+    }
+
+    /* .stiky .main-nav {
+        float: none;
+        display: block;
+    } */
+
+    .main-nav{
+        display: none;
+    }
+    .main-nav {
+        float: none;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .main-nav li:first-child {
+        position: relative;
+        top: -8px;
+        left: -30px;
+    }
+    
+    .main-nav li {
+        display: block;
+        margin-top: 5px;
+    }
+
+    /*stiky nav*/
+    .stiky .main-nav {
+        margin-top: 40px;
+    }
+
     /*  Programing section --- */
 
     .programing-divs {        
@@ -89,7 +180,7 @@
 
     /*  Working ----  */
     .experiences-section {
-        margin-top: 30px;
+        /* margin-top: 30px; */
         background-color: #f1f1f1;
         background-image: linear-gradient(rgba(255, 255, 255, 0.85),rgba(228, 228, 228, 0.85)), url('../img/working.jpg');
         background-size: cover;
@@ -169,13 +260,19 @@
 
     .programing-divs {        
         padding: 3px;
-        width: 100%; 
+        width: 95%; 
         max-width: auto;  
         height: auto;
         min-height: 500px;      
     }
 
     .profile-picture{
-        width: 100%;
+        width: 70%;
+    }
+
+    /* footer */
+    footer ul li a:hover,
+    footer ul li a:active {
+        color: #fff;
     }
 }

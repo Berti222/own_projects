@@ -45,6 +45,33 @@ $(document).ready(function() {
         else
           $('nav').removeClass('stiky');
       }, {
-        offset: '80px'
+        offset: '42px'
       });
+
+      // mobile nav ----------------
+
+      $('.js--nav-icon').click(function(){
+
+        $('.main-nav').slideToggle(250);
+        let icon = $('.js--nav-icon i');
+        
+        if(icon.attr('class') == 'la la-bars'){
+          icon.removeClass('la la-bars');
+          icon.addClass('la la-caret-down');
+        }else{
+          icon.removeClass('la la-caret-down');
+          icon.addClass('la la-bars');
+        }
+      });
+
+      $('.main-nav').click( function() {
+        $('.main-nav').slideToggle(200);
+        let icon = $('.js--nav-icon i');
+
+        if(icon.attr('class') == 'la la-caret-down'){
+          icon.removeClass('la la-caret-down');
+          icon.addClass('la la-bars');
+        }
+      });
+
 });
