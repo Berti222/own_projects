@@ -129,10 +129,6 @@ section {
     position: relative;
 }
 
-/* .experiences-section {
-    margin-top: 50px;
-} */
-
 /*-------------  Links --------------*/
 a:link,
 a:visited {
@@ -191,7 +187,6 @@ nav a .la {
     top: 0;
     left: 0;
     width: 100%;
-    /* background-color: rgba(0, 122, 204, 0.96); */
     background-image: linear-gradient(to right, rgba(0, 122, 204, 0.96), rgba(115, 199, 255, 0.96));
     box-shadow: 0 1px 2px rgb(173, 173, 173);
     z-index: 100;
@@ -258,6 +253,10 @@ nav a .la {
     margin-top: 130px;
 }
 
+.about-me-content p{
+    padding-top: 4px;
+}
+
 /* Education section*/
 
 .edu-ul{
@@ -312,14 +311,8 @@ nav a .la {
     background-color: rgb(120, 51, 167);
     color: #fff;
 }
-/*-------- Working Section  -----------*/
 
-/* .experiences-section>div {
-    border-left: 8px solid rgb(120, 51, 167);
-    border-right: 8px solid rgb(120, 51, 167);
-    border-radius: 150px; 
-    margin-left: 40px; 
-}*/
+/*-------- Working Section  -----------*/
 
 .working img{      
     width: 85%;
@@ -334,13 +327,6 @@ nav a .la {
 
 .working ul li {
     position: relative;
-    /* background-color: rgba(175, 174, 174,0.6);
-    padding: 10px;
-    border-radius: 5px;
-    border-top: 13px solid #ff3a2c;
-    width: 400px;
-    margin-top: 20px;
-    color: red; */
 }
 .working ul li i {
     position: absolute;
@@ -385,9 +371,6 @@ nav a .la {
     width: 100%;
 }
 
-/* .training360 {
-    text-align: center;
-} */
 .training360 p {
     display: inline-block;
     color: #fff;
@@ -410,6 +393,61 @@ nav a .la {
     border-bottom: 4px solid rgb(250, 112, 0);
 }
 
+.programing-divs a:visited,
+.programing-divs a:link{
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.programing-divs a:active,
+.programing-divs a:hover{
+    color: rgb(255, 156, 75);
+    border-bottom: 1px solid rgb(255, 156, 75);
+}
+
+
+/* My profiles   ------------*/
+
+.my-profiles h4 {
+    margin-bottom: 20px;
+}
+
+.my-profiles ul {
+    list-style-type: none;
+}
+
+.my-profiles ul li{
+    float: right;
+    margin-left: 30px;
+}
+
+.github a:link,
+.github a:visited,
+.hackerrank a:link,
+.hackerrank a:visited{
+    border: 2px solid rgb(189, 189, 189);
+    padding: 3px;
+    border-radius: 5px;
+    background-color: none;
+    transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.github a:active,
+.github a:hover{
+    color:#fff;
+    background-color: #333;
+    border: 2px solid #333;
+}
+
+.hackerrank a:active,
+.hackerrank a:hover {
+    color: #fff;
+    background-color: #1ba94c;
+    border: 2px solid #1ba94c;
+}
 /*-------------   Footer Section  ----------------*/
 
 footer {

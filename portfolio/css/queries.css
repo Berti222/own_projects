@@ -16,7 +16,7 @@
     }
 }
 
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 1024px){
     .span-1-of-2 {
         padding: 0 10px;
     }
@@ -32,7 +32,34 @@
         padding: 20px;
         width: 100%; 
         max-width: 450px;  
-        height: 450px;      
+        height: 400px;      
+    }
+
+    .programing-divs a:link,
+    .programing-divs a:visited,
+    .programing-divs a:active,
+    .programing-divs a:hover{
+        color: rgb(255, 156, 75);
+        border-bottom: 1px solid rgb(255, 156, 75);
+    }
+    .github a:link,
+    .github a:visited,
+    .github a:hover,
+    .github a:active {
+        color:#fff;
+        font-weight: 600;
+        background-color: #333;
+        border: 2px solid rgba(189, 189, 189, 0.8);
+    }
+
+    .hackerrank a:link,
+    .hackerrank a:visited,
+    .hackerrank a:hover,
+    .hackerrank a:active{
+        color: #fff;
+        font-weight: 600;
+        background-color: #1ba94c;
+        border: 2px solid rgba(189, 189, 189, 0.8);
     }
 
     /* nav links   -------------- */
@@ -65,9 +92,12 @@
 @media only screen and (max-width: 860px){
 
     /*  Programing section --- */
+    .main-nav{
+        font-size: 90%;
+    }
 
     .programing-divs { 
-        height: 500px;      
+        height: 400px;      
     }
 }
 
@@ -137,6 +167,7 @@
         display: none;
     }
     .main-nav {
+        font-size: 100%;
         float: none;
         list-style: none;
         margin-top: 20px;
@@ -164,7 +195,7 @@
         margin: 20px auto;
         padding: 20px;
         width: 430px;
-        height: 450px;      
+        height: 350px;      
     }
 
      /*  Education ---  */
@@ -189,10 +220,6 @@
         position: relative;
     }
     .working img{      
-        /* width: 50%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        align-content: center; */
         display: none;
     }
 
