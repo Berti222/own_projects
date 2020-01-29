@@ -59,8 +59,8 @@ class StoredData {
 
 class InputData {
 
-    makingDataObject(){
-        let numberOfKids = document.querySelector('#under18');
+    makingDataObject(nights, numberOfKids, guests){
+        
         numberOfKids = numberOfKids ? numberOfKids.value : 0;
         const numberOfNights = nights.value;
         const numberOfGuests = guests.value;

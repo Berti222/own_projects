@@ -31,7 +31,7 @@ extraBedPrice.addEventListener('change', setExtraBedPrice);
 
 // Instantiating---------------------------
 const myData = new StoredData();
-const ui = new UI(myData);
+const ui = new UI(myData, unitPrice, discountFromDay, discount, touristTax, extraBedPrice, paying);
 const inputData = new InputData();
 
 function Window_load_handler(){
@@ -83,8 +83,9 @@ function guestsChangeListener(){
 // Sending button ---------------------------------------
 function calculate() {
     const nights = document.querySelector('#nights');
+    const numberOfKids = document.querySelector('#under18');
 
-    const logic = new Logics(myData.getStoredData(), inputData.makingDataObject());
+    const logic = new Logics(myData.getStoredData(), inputData.makingDataObject(nights, numberOfKids, guests));
 
     ui.payingPopUpWindow(logic.calsulatedObjecWhitSpaces() ,nights.value)    
 }

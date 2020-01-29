@@ -1,26 +1,32 @@
 class UI {
 
-    constructor(storedData){
+    constructor(storedData, unitPrice, discountFromDay, discount, touristTax, extraBedPrice, paying){
         this.storedData= storedData;
+        this.unitPrice = unitPrice;
+        this.discountFromDay = discountFromDay;
+        this.discount = discount;
+        this.touristTax = touristTax;
+        this.extraBedPrice = extraBedPrice;
+        this.paying = paying;
     }
 
     settingCollapseInputs() {
         const storedDataObject = this.storedData.getStoredData();
 
-        unitPrice.value = storedDataObject.unitPrice;
-        discountFromDay.value = storedDataObject.discountFromDay;
-        discount.value = storedDataObject.discount;
-        touristTax.value = storedDataObject.touristTax;
-        extraBedPrice.value = storedDataObject.extraBedPrice;
+        this.unitPrice.value = storedDataObject.unitPrice;
+        this.discountFromDay.value = storedDataObject.discountFromDay;
+        this.discount.value = storedDataObject.discount;
+        this.touristTax.value = storedDataObject.touristTax;
+        this.extraBedPrice.value = storedDataObject.extraBedPrice;
 
     }
 
     areThereValues() {        
-        if (unitPrice.value == '' || 
-            discountFromDay.value == '' ||
-            discount.value == '' || 
-            touristTax.value == ''||
-            extraBedPrice.value == '') {
+        if (this.unitPrice.value == '' || 
+            this.discountFromDay.value == '' ||
+            this.discount.value == '' || 
+            this.touristTax.value == ''||
+            this.extraBedPrice.value == '') {
 
             alertForSettingData.setAttribute('style', 'display:block');
         } else {
@@ -63,10 +69,10 @@ class UI {
 
     payingPopUpWindow(calculatedPrice, nights){
 
-        const mainDiv = paying.querySelector('#mainDiv');
+        const mainDiv = this.paying.querySelector('#mainDiv');
 
         if(mainDiv != null)
-            paying.removeChild(mainDiv);
+            this.paying.removeChild(mainDiv);
 
         if(nights == '')
             nights = 0;
@@ -112,7 +118,7 @@ class UI {
             `;
         div.setAttribute('Id', 'mainDiv');
 
-        paying.appendChild(div);
+        this.paying.appendChild(div);
     }
 
 }
